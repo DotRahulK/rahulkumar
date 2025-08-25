@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rahul Kumar &mdash; Blog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <!-- Navigation: reuse links from the main site with a theme toggle and menu button -->
+  <nav>
+    <div class="container nav-container">
+      <div class="logo">Rahul</div>
+      <button class="menu-btn" aria-label="Toggle navigation menu">☰</button>
+      <ul class="links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><button class="toggle-theme" aria-label="Toggle light/dark mode">🌙</button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="fade-in" style="padding-top: 80px;">
+    <div class="container">
+      <h1>Blog</h1>
+      <p>Welcome to my blog! Here you will find articles about full‑stack engineering, architecture patterns and lessons learned from the field.</p>
+      <ul class="blog-list">
+        <li>
+          <a href="blog/post1.html">How I built my portfolio site</a>
+          <span class="post-date">March 2025</span>
+          <p>An in‑depth look at the process and tools used to build my personal portfolio, including design decisions and implementation details.</p>
+        </li>
+        <li>
+          <a href="blog/post2.html">Breaking a monolith into modular services</a>
+          <span class="post-date">April 2025</span>
+          <p>Lessons learned from refactoring a monolithic backend into modular services for better scalability and maintainability.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Rahul Kumar. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
