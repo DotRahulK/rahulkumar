@@ -3,13 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Breaking a monolith into modular services &mdash; Rahul Kumar</title>
+  <title>Blog Post &mdash; Rahul Kumar</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../styles.css" />
   <script defer src="../script.js"></script>
+  <script defer src="posts.js"></script>
+  <script defer src="post.js"></script>
 </head>
 <body>
   <nav>
@@ -30,25 +32,15 @@
 
   <section style="padding-top: 80px;">
     <div class="container">
-      <h1>Breaking a monolith into modular services</h1>
-      <p class="post-date">April 2025</p>
-      <p>
-        When your application starts to groan under its own weight, it's time to rethink how it's structured. In this
-        article, I share the journey of splitting a monolithic backend API into modular, independently deployable services.
-      </p>
-      <p>
-        We began by identifying clear domain boundaries and then extracted each domain into its own NestJS module and
-        service. By doing so, we could scale the pieces independently, reduce deployment risk and improve developer
-        productivity. The result? A 25 % improvement in average API response times and a codebase that's far easier to
-        evolve.
-      </p>
-      <p>
-        Along the way we discovered some gotchas with shared data models and authentication, and I'll dive into how we
-        addressed those challenges in a future post.
-      </p>
+      <h1 id="post-title"></h1>
+      <p class="post-date" id="post-date"></p>
+      <img id="post-image" class="post-image" alt="" />
+      <small id="image-desc" class="image-desc"></small>
+      <div id="post-content"></div>
       <p><a href="../blog.html">← Back to all posts</a></p>
     </div>
   </section>
+
   <footer>
     <div class="container">
       <p>&copy; 2025 Rahul Kumar. All rights reserved.</p>
