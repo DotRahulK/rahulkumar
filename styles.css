@@ -1,3 +1,36 @@
+
+@keyframes pullUpBounce {
+  0% {
+    transform: translateY(60px) scale(0.9);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-12px) scale(1.02);
+    opacity: 1;
+  }
+  70% {
+    transform: translateY(6px) scale(0.98);
+  }
+  85% {
+    transform: translateY(-4px) scale(1.01);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+.avatar-animate {
+  display: inline-block;
+  max-width: 220px;   /* smaller size */
+  margin: 0 auto 1rem;
+  animation: pullUpBounce 1.6s cubic-bezier(.22,1,.36,1) both;
+}
+.avatar-animate img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* Base colour palette using CSS variables for light and dark themes */
 :root {
   --bg: #ffffff;
@@ -249,6 +282,21 @@ section {
   font-size: 0.85rem;
   color: var(--muted);
   margin-left: 0.5rem;
+}
+
+.blog-list img,
+.post-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.image-desc {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
 }
 
 /* Footer */

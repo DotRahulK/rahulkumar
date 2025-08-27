@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rahul Kumar &mdash; Full‑Stack Engineer</title>
+  <title>Rahul Kumar &mdash; Full-Stack Engineer</title>
   <!-- Fonts for modern typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,12 +11,15 @@
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
   <!-- Stylesheet for theme, layout and animations -->
   <link rel="stylesheet" href="styles.css" />
-  <!-- Site scripts: dark mode toggle, smooth scroll, fade‑ins -->
+  <!-- Site scripts: dark mode toggle, smooth scroll, fade-ins -->
   <script defer src="script.js"></script>
+  <script defer src="blog/posts.js"></script>
+  <script defer src="blog/blog.js"></script>
+  
 </head>
 <body>
 
-  <!-- Navigation bar with links to each section and theme toggle -->
+  <!-- Navigation bar -->
   <nav>
     <div class="container nav-container">
       <div class="logo">Rahul</div>
@@ -33,16 +36,21 @@
     </div>
   </nav>
 
-  <!-- Hero section introducing Rahul with headline and tagline -->
+  <!-- Hero section -->
   <section id="home" class="hero fade-in">
-    <div class="container">
+    <div class="container" style="text-align:center">
+        <!-- Minimal avatar SVG -->
+      
+      <div class="avatar-animate">
+        <img src="assets/rahul.svg" alt="Rahul avatar" />
+      </div>
       <h1>Hello, I'm <span class="highlight">Rahul Kumar</span>.</h1>
-      <p class="subtitle">Full‑stack engineer who builds tools that save teams time.</p>
+      <p class="subtitle">Full-stack engineer who builds tools that save teams time.</p>
       <div class="cta-row">
         <a class="btn" href="mailto:rahkumar9993@gmail.com">Email me</a>
         <a class="btn secondary" href="assets/resume.pdf" target="_blank" rel="noopener">View résumé (PDF)</a>
         <a class="icon" href="https://github.com/DotRahulK" target="_blank" aria-label="GitHub profile">🐙</a>
-        <a class="icon" href="https://linkedin.com/in/rahulkumar-sde" target="_blank" aria-label="LinkedIn profile">🔗</a>
+        <a class="icon" href="https://www.linkedin.com/in/rahul-kumar-2b5035212/" target="_blank" aria-label="LinkedIn profile">🔗</a>
       </div>
       <ul class="metrics">
         <li><span class="chip success">93%</span> faster campaign setup</li>
@@ -129,10 +137,7 @@
       <p>
         I occasionally share articles on development, architecture and lessons learned. Here are my latest posts:
       </p>
-      <ul class="blog-list">
-        <li><a href="blog/post1.html">How I built my portfolio site</a> <span class="post-date">Mar 2025</span></li>
-        <li><a href="blog/post2.html">Breaking a monolith into modular services</a> <span class="post-date">Apr 2025</span></li>
-      </ul>
+      <ul class="blog-list" data-preview data-count="2"></ul>
       <p>→ <a href="blog.html">See all blog posts</a></p>
     </div>
   </section>
@@ -143,7 +148,7 @@
       <h2>Contact</h2>
       <p>If you have an idea to discuss or just want to say hi, I'd love to hear from you. Feel free to reach out:</p>
       <p>Email: <a href="mailto:rahkumar9993@gmail.com">rahkumar9993@gmail.com</a></p>
-      <p>Social: <a href="https://github.com/DotRahulK" target="_blank">GitHub</a> • <a href="https://linkedin.com/in/rahulkumar-sde" target="_blank">LinkedIn</a></p>
+      <p>Social: <a href="https://github.com/DotRahulK" target="_blank">GitHub</a> • <a href="https://www.linkedin.com/in/rahul-kumar-2b5035212/" target="_blank">LinkedIn</a></p>
     </div>
   </section>
 
