@@ -3,26 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rahul Kumar &mdash; Full-Stack Engineer</title>
-  <!-- Fonts for modern typography -->
+  <title>Rahul Kumar — Full‑Stack Engineer</title>
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Raleway:wght@500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
   <!-- Stylesheet for theme, layout and animations -->
   <link rel="stylesheet" href="styles.css" />
   <!-- Site scripts: dark mode toggle, smooth scroll, fade-ins -->
   <script defer src="script.js"></script>
   <script defer src="blog/posts.js"></script>
   <script defer src="blog/blog.js"></script>
-  
 </head>
 <body>
-
   <!-- Navigation bar -->
   <nav>
     <div class="container nav-container">
-      <div class="logo">Rahul</div>
+      <div class="logo" aria-label="Rahul home">Rahul</div>
       <button class="menu-btn" aria-label="Toggle navigation menu">☰</button>
       <ul class="links">
         <li><a href="#home">Home</a></li>
@@ -39,125 +36,170 @@
   <!-- Hero section -->
   <section id="home" class="hero fade-in">
     <div class="container" style="text-align:center">
-        <!-- Minimal avatar SVG -->
-      
+      <!-- Minimal avatar -->
       <div class="avatar-animate">
         <img src="assets/rahul.svg" alt="Rahul avatar" />
       </div>
       <h1>Hello, I'm <span class="highlight">Rahul Kumar</span>.</h1>
-      <p class="subtitle">Full-stack engineer who builds tools that save teams time.</p>
+      <p class="subtitle">Full‑stack engineer who ships pragmatic tools, trims friction, and saves teams time.</p>
       <div class="cta-row">
-        <a class="btn" href="mailto:rahkumar9993@gmail.com">Email me</a>
-        <a class="btn secondary" href="assets/resume.pdf" target="_blank" rel="noopener">View résumé (PDF)</a>
+        <a class="btn" href="mailto:rahkumar9993@gmail.com">Say hi</a>
+        <a class="btn secondary" href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
         <a class="icon" href="https://github.com/DotRahulK" target="_blank" aria-label="GitHub profile">🐙</a>
         <a class="icon" href="https://www.linkedin.com/in/rahul-kumar-2b5035212/" target="_blank" aria-label="LinkedIn profile">🔗</a>
       </div>
-      <ul class="metrics">
+      <ul class="metrics" aria-label="Impact metrics">
         <li><span class="chip success">93%</span> faster campaign setup</li>
         <li><span class="chip success">80%</span> faster ticket triage</li>
-        <li><span class="chip success">7+ FTEs/yr</span> saved</li>
+        <li><span class="chip success">7+ FTEs/yr</span> saved
+          <span class="muted">(deck automation + routing)</span>
+        </li>
       </ul>
     </div>
   </section>
 
-  <!-- About section: a concise summary of Rahul's background and values -->
+  <!-- About section -->
   <section id="about" class="fade-in">
     <div class="container">
       <h2>About Me</h2>
       <p>
-        I'm Rahul Kumar, a software engineer based in Bangalore, India. I specialise in Angular on the front and NestJS on the back,
-        building full‑stack applications that emphasise developer experience and automation. My work centres on clean APIs,
-        performant user interfaces and tooling that makes engineering teams more effective.
+        I’m Rahul Kumar (Bangalore, India). I build web things that respect your time: Angular up front, NestJS behind the scenes,
+        and PostgreSQL/MSSQL keeping the facts straight. I love turning messy, repetitive workflows into clean, dependable tools.
       </p>
       <p>
-        Outside of shipping code, you'll find me exploring caching patterns with Redis, fine‑tuning bundle sizes with micro‑frontends,
-        or mentoring newer engineers. I value clear communication, empathy and a bias for action in everything I build.
+        Around work you’ll catch me fine‑tuning bundle sizes, geeking out about Redis caching, or writing little CLIs that make
+        the whole team breathe easier. My north stars: <strong>say it clearly</strong>, <strong>care about people</strong>, and
+        <strong>deliver value fast</strong>.
       </p>
     </div>
   </section>
 
-  <!-- Experience section: summarises achievements with metrics for Epsilon -->
+  <!-- Experience section -->
   <section id="experience" class="fade-in">
     <div class="container">
       <h2>Experience</h2>
+
       <article class="card">
         <header class="card-head">
           <h3>Epsilon — Software Engineer</h3>
-          <span class="muted">Aug 2023 – Present • Bangalore</span>
+          <span class="muted">Aug 2023 – Present • Bangalore</span>
         </header>
         <ul>
-          <li>Created and integrated the <strong>Campaign Builder Automation</strong> (CBA) tool, slashing campaign setup time by <strong>93 %</strong> &mdash; from 3–4 hours down to 15 minutes &mdash; and saving the equivalent of more than <strong>seven full‑time employees</strong> each year.</li>
-          <li>Developed <strong>Auto Assigner</strong>, a Jira‑based routing system that automatically handles <strong>4,000–5,000 tickets per month</strong> and cuts triage time by <strong>80 %</strong>, ensuring workloads are balanced across teams.</li>
-          <li>Built and maintained internal automation platforms with <strong>NestJS + Angular</strong> that support over <strong>10 global teams</strong>, reducing manual work by about <strong>40 %</strong>.</li>
-          <li>Implemented a fully automated <strong>LLM‑powered PR review</strong> workflow in Bitbucket, offering real‑time code quality checks and even suggesting fixes to pull requests.</li>
-          <li>Enhanced <strong>Deckorator</strong> using <strong>Playwright</strong> and YAML to standardise deck creation, freeing up more than <strong>60 hours per month</strong> of repetitive work.</li>
-          <li>Divided a bloated <strong>Angular</strong> application into <strong>micro‑frontends</strong> with lazy loading, cutting bundle size by <strong>20 %</strong> and reducing initial load times by <strong>30 %</strong> for a snappier user experience.</li>
-          <li>Broke a monolithic <strong>backend API</strong> into a set of <strong>modular services</strong>, improving scalability and lowering average response times by <strong>25 %</strong>.</li>
-          <li>Led high‑impact epics like <strong>Auto Assigner</strong>, <strong>Deckorator</strong> and CBA, working closely with <strong>5+ cross‑functional teams</strong> and stakeholders to deliver value on schedule.</li>
+          <li>
+            Built <strong>Campaign Builder Automation (CBA)</strong> end‑to‑end — cut setup from <strong>3–4 hours → ~15 minutes</strong>,
+            translating to <strong>7+ FTEs/yr</strong> in saved effort. (Angular, NestJS, PostgreSQL)
+          </li>
+          <li>
+            Created <strong>Auto‑Assigner</strong>, a Jira routing system that auto‑distributes <strong>4–5K tickets/month</strong>, reducing
+            triage time by <strong>≈80%</strong> and keeping workloads fair across teams.
+          </li>
+          <li>
+            Levelled up <strong>Deckorator</strong> with Playwright automation + YAML configs — standardized deck creation and freed
+            <strong>60+ hours/month</strong> from manual toil.
+          </li>
+          <li>
+            Shipped an <strong>LLM‑powered PR review</strong> pipeline in Bitbucket for real‑time quality checks and inline suggestions; paired with a
+            <strong>Code‑Quality CLI</strong> (Jest coverage, ESLint complexity, custom metrics) wired into Nx/Bitbucket.
+          </li>
+          <li>
+            Split a heavy <strong>Angular</strong> app into <strong>micro‑frontends</strong> with lazy loading — ~<strong>20%</strong> bundle reduction and
+            ~<strong>30%</strong> faster initial loads.
+          </li>
+          <li>
+            Decomposed a monolith into <strong>modular services</strong> — improved scalability and brought average API response times down by
+            <strong>~25%</strong>.
+          </li>
+          <li>
+            Drove the <strong>HML User Branding & Experience</strong> initiative: design system, dark/light themes, and Angular upgrade work (→ 19) across
+            multiple apps in the Pangea ecosystem (Atlas, Client Portal, Launch Calendar, etc.).
+          </li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <header class="card-head">
+          <h3>Earlier work & internships — Selected Highlights</h3>
+          <span class="muted">2021 – 2022</span>
+        </header>
+        <ul>
+          <li>
+            <strong>Slate</strong>: conflict‑free timetable generator (Angular, RxJS, Node.js, PostgreSQL) — reduced manual scheduling effort by
+            <strong>≈80%</strong> and added API‑driven validation + Reactive Forms for a smoother UX.
+          </li>
+          <li>
+            <strong>Infor</strong>: role‑based information system (Angular, NestJS, TypeORM, MSSQL) with CSV bulk uploads & automated email notifications.
+          </li>
+          <li>
+            <strong>Smart Campus ID</strong>: centralized ID platform (NestJS, REST APIs, PostgreSQL) serving <strong>500+ users</strong> with distributed access control.
+          </li>
         </ul>
       </article>
     </div>
   </section>
 
-  <!-- Projects section: highlight selected work with context and results -->
+  <!-- Projects section -->
   <section id="projects" class="fade-in">
     <div class="container">
       <h2>Projects</h2>
+
       <article class="card">
-        <h3>Slate — Timetable Generation Platform</h3>
-        <p class="muted">Angular, RxJS, Node.js, PostgreSQL • 2022</p>
+        <h3>Auto‑Assigner — Workload Balancer</h3>
+        <p class="muted">NestJS, PostgreSQL, Jira API • 2024</p>
         <p>
-          Built a conflict‑free scheduling tool tested with faculty across multiple sections; reduced manual scheduling effort by approximately <strong>80%</strong>.
-          Added <strong>API‑driven validation</strong> and <strong>Reactive Forms</strong> to deliver a smoother user experience.
+          Routes thousands of tickets per month using rules, tags, and team daily‑points. Added shared‑member logic and analytics.
+          Net result: fairer queues, faster pickups, happier humans.
         </p>
       </article>
+
       <article class="card">
-        <h3>Infor — Information Management System</h3>
-        <p class="muted">Angular, NestJS, TypeORM, MSSQL • 2021</p>
+        <h3>Deckorator — Deck Generation Automation</h3>
+        <p class="muted">Playwright, YAML, Angular • 2024</p>
         <p>
-          Engineered a role‑based student/faculty data platform with CSV bulk uploads and automated email notifications, streamlining
-          information distribution across the college and reducing coordination overhead.
+          CLI + scripts that screenshot sites, pull data, and assemble on‑brand decks. Saves ~<strong>60+ hours/month</strong> for AM teams.
         </p>
       </article>
+
       <article class="card">
-        <h3>Smart Campus ID — Centralised ID System</h3>
-        <p class="muted">NestJS, REST APIs, PostgreSQL • 2021</p>
+        <h3>Code‑Quality CLI — CI Metrics</h3>
+        <p class="muted">Node.js, Nx, Jest, ESLint • 2024</p>
         <p>
-          Designed and implemented a centralised ID card platform with distributed access control for <strong>500+ users</strong>; developed
-          scalable REST APIs and relational schemas to support growth.
+          Aggregates coverage/complexity into a single report, publishes to a central table, and leaves friendly nudges on PRs.
         </p>
       </article>
+
     </div>
   </section>
 
-  <!-- Blog section summarising latest posts -->
+  <!-- Blog section -->
   <section id="blog" class="fade-in">
     <div class="container">
       <h2>Blog</h2>
       <p>
-        I occasionally share articles on development, architecture and lessons learned. Here are my latest posts:
+        Notes on building for the web — what worked, what didn’t, and the small tricks that made teammates smile.
       </p>
       <ul class="blog-list" data-preview data-count="2"></ul>
-      <p>→ <a href="blog.html">See all blog posts</a></p>
+      <p>→ <a href="blog.html">See all posts</a></p>
     </div>
   </section>
 
-  <!-- Contact section: call to action and social links -->
+  <!-- Contact section -->
   <section id="contact" class="fade-in">
     <div class="container">
       <h2>Contact</h2>
-      <p>If you have an idea to discuss or just want to say hi, I'd love to hear from you. Feel free to reach out:</p>
+      <p>
+        Got an idea, stuck workflow, or just want to nerd out about Angular, NestJS, or Postgres? I’m in. Say hello and we’ll
+        figure it out together.
+      </p>
       <p>Email: <a href="mailto:rahkumar9993@gmail.com">rahkumar9993@gmail.com</a></p>
       <p>Social: <a href="https://github.com/DotRahulK" target="_blank">GitHub</a> • <a href="https://www.linkedin.com/in/rahul-kumar-2b5035212/" target="_blank">LinkedIn</a></p>
     </div>
   </section>
 
-  <!-- Footer with copyright and credit -->
+  <!-- Footer -->
   <footer>
     <div class="container">
-      <p>&copy; 2025 Rahul Kumar. Built with love &mdash; hosted on GitHub Pages.</p>
+      <p>&copy; 2025 Rahul Kumar. Built with care — hosted on GitHub Pages.</p>
     </div>
   </footer>
-
 </body>
 </html>
